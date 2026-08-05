@@ -8,3 +8,6 @@ service:
 ingress:
   enabled: true
   host: "task-dev.local"
+env:
+  - name: BACKEND_URL
+    value: "http://task-backend:8080"
