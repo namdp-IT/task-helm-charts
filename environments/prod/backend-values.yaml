@@ -1,0 +1,18 @@
+replicaCount: 2
+image:
+  repository: ghcr.io/namdp-it/task-backend
+  tag: "v1.0.0"
+service:
+  port: 8080
+  targetPort: 8080
+env:
+  - name: DB_HOST
+    value: "prod-postgres" # Tên service sinh ra từ ArgoCD: <env>-<app>
+  - name: DB_PORT
+    value: "5432"
+  - name: DB_NAME
+    value: "taskdb"
+  - name: DB_USER
+    value: "postgres"
+  - name: DB_PASSWORD
+    value: "secret123"

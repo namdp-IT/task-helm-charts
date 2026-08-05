@@ -1,0 +1,13 @@
+image:
+  repository: postgres
+  tag: "15-alpine"
+service:
+  port: 5432
+  targetPort: 5432
+env:
+  - name: POSTGRES_DB
+    value: "taskdb"
+  - name: POSTGRES_USER
+    value: "postgres"
+  - name: POSTGRES_PASSWORD
+    value: "secret123"

@@ -1,0 +1,14 @@
+replicaCount: 2
+image:
+  repository: ghcr.io/namdp-it/task-frontend-prod
+  tag: "v1.0.1"
+  pullPoicy: Always
+service:
+  port: 80
+  targetPort: 80
+ingress:
+  enabled: true
+  host: "task-prod.test"
+env:
+  - name: BACKEND_URL
+    value: "http://prod-backend:8080"
