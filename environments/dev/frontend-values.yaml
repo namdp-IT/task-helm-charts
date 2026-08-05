@@ -10,4 +10,4 @@ ingress:
   host: "task-demo.test"
 env:
   - name: BACKEND_URL
-    value: "http://task-backend:8080"
+    value: "http://dev-backend:8080"
