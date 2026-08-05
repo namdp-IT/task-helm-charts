@@ -5,3 +5,4 @@ service:
   type: ClusterIP
 ingress:
   enabled: false
+  className: "nginx"
