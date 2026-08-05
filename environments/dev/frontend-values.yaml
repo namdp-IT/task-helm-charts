@@ -7,7 +7,7 @@ service:
   targetPort: 80
 ingress:
   enabled: true
-  host: "task-dev.test"
+  host: "task-demo.test"
 env:
   - name: BACKEND_URL
     value: "http://task-backend:8080"
