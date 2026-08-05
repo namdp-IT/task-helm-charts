@@ -1,0 +1,7 @@
+replicaCount: 1
+image:
+  pullPolicy: IfNotPresent
+service:
+  type: ClusterIP
+ingress:
+  enabled: false

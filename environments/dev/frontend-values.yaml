@@ -1,0 +1,10 @@
+replicaCount: 2
+image:
+  repository: ghcr.io/namdp-it/task-frontend
+  tag: "v1.0.0"
+service:
+  port: 80
+  targetPort: 80
+ingress:
+  enabled: true
+  host: "task-dev.local"
