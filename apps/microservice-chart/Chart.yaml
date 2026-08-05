@@ -1,0 +1,4 @@
+apiVersion: v2
+name: argocd-infra
+description: Helm Chart dùng để sinh ArgoCD Applications và AppProjects
+version: 0.1.0
