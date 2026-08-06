@@ -7,7 +7,7 @@ service:
   targetPort: 8080
 env:
   - name: DB_HOST
-    value: "dev-postgres" # Tên service sinh ra từ ArgoCD: <env>-<app>
+    value: "192.168.122.8" # Tên service sinh ra từ ArgoCD: <env>-<app>
   - name: DB_PORT
     value: "5432"
   - name: DB_NAME
