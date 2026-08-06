@@ -15,4 +15,6 @@ env:
   - name: DB_USER
     value: "postgres"
   - name: DB_PASSWORD
-    value: "secret123"
+    value: "Trang1012@"
+  - name: DB_SSLMODE
+    value: "require"
