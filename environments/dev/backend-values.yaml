@@ -16,6 +16,6 @@ env:
   - name: DB_USER
     value: "postgres"
   - name: DB_PASSWORD
-    value: "Trang1012"
+    value: "Trang1012@"
   - name: DB_SSLMODE
     value: "verify-full"
