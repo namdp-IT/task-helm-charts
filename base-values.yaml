@@ -6,7 +6,3 @@ service:
 ingress:
   enabled: false
   className: "nginx"
-secretNames:
-  - postgres-secret
-  - redis-secret
-  - kafka-secret
