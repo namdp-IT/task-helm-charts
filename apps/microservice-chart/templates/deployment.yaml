@@ -18,5 +18,6 @@ spec:
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
             - containerPort: {{ .Values.service.targetPort }}
-          env:
-            {{- toYaml .Values.env | nindent 16 }}
+          envFrom:
+            - secretRef:
+                name: {{ .Values.secretName }}
