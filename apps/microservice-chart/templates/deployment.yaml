@@ -25,3 +25,8 @@ spec:
                 name: {{ . | quote }}
             {{- end }}
           {{- end }}
+
+          {{- if .Values.env }}
+          env:
+            {{- toYaml .Values.env | nindent 12 }}
+          {{- end }}
