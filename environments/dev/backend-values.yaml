@@ -8,8 +8,6 @@ service:
   targetPort: 8080
 secretNames:
   - postgres-secret
-  - redis-secret
-  - kafka-secret  
 env:
   - name: DB_HOST
     value: "192.168.122.1" # Tên service sinh ra từ ArgoCD: <env>-<app>
