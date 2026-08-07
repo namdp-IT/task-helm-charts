@@ -8,16 +8,3 @@ service:
   targetPort: 8080
 secretNames:
   - postgres-secret
-env:
-  - name: DB_HOST
-    value: "192.168.122.1" # Tên service sinh ra từ ArgoCD: <env>-<app>
-  - name: DB_PORT
-    value: "5432"
-  - name: DB_NAME
-    value: "#"
-  - name: DB_USER
-    value: "postgres"
-  - name: DB_PASSWORD
-    value: ""
-  - name: DB_SSLMODE
-    value: "verify-full"
