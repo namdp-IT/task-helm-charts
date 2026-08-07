@@ -8,14 +8,14 @@ service:
   targetPort: 8080
 env:
   - name: DB_HOST
-    value: "192.168.122.8" # Tên service sinh ra từ ArgoCD: <env>-<app>
+    value: "192.168.122.1" # Tên service sinh ra từ ArgoCD: <env>-<app>
   - name: DB_PORT
     value: "5432"
   - name: DB_NAME
-    value: "taskdb"
+    value: "#"
   - name: DB_USER
     value: "postgres"
   - name: DB_PASSWORD
-    value: "Trang1012@"
+    value: ""
   - name: DB_SSLMODE
     value: "verify-full"
